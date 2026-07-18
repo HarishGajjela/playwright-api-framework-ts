@@ -1,0 +1,631 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "H:\\Playwright\\Playwright_API_TS\\node_modules\\@playwright\\test\\cli.js",
+      "test"
+    ],
+    "configFile": "H:\\Playwright\\Playwright_API_TS\\playwright.config.ts",
+    "rootDir": "H:/Playwright/Playwright_API_TS/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "H:/Playwright/Playwright_API_TS/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "",
+        "name": "",
+        "testDir": "H:/Playwright/Playwright_API_TS/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 15000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report",
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api\\create-posts.spec.ts",
+      "file": "api/create-posts.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "POST posts API",
+          "file": "api/create-posts.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "creates a post successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 334,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Request succeeded with status 201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:27.885Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "988f1ba9d57d52baaa3c-19a600bebf3050dd8f40",
+              "file": "api/create-posts.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "fails when required title is missing",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 322,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Request succeeded with status 201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:27.929Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "988f1ba9d57d52baaa3c-a5af2b8677ea7bb9773e",
+              "file": "api/create-posts.spec.ts",
+              "line": 26,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\delete-posts.spec.ts",
+      "file": "api/delete-posts.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "DELETE posts API",
+          "file": "api/delete-posts.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "deletes an existing post successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 318,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Request succeeded with status 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:27.936Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "788432f220679bbfc929-07a34ba2d706c9bd1f99",
+              "file": "api/delete-posts.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "handles deleting a non-existing post gracefully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 323,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Request succeeded with status 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:27.913Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "788432f220679bbfc929-5cf08327b287f46ffa37",
+              "file": "api/delete-posts.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\get-posts.spec.ts",
+      "file": "api/get-posts.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "GET posts API",
+          "file": "api/get-posts.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "gets an existing post successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 128,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Request succeeded with status 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:27.958Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1215ef0075b10d2bd673-7b07f2435f2fca046985",
+              "file": "api/get-posts.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "returns a not-found error for a non-existing post",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 127,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [
+                        {
+                          "text": "Request failed with status 404 and body: {}\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:27.908Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1215ef0075b10d2bd673-68d2218a1e4e81a89bde",
+              "file": "api/get-posts.spec.ts",
+              "line": 25,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api\\update-posts.spec.ts",
+      "file": "api/update-posts.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "PUT posts API",
+          "file": "api/update-posts.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "updates an existing post successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 230,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Request succeeded with status 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:28.117Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "614e66ec737b37252fa2-5289a958bcb7c21c0b12",
+              "file": "api/update-posts.spec.ts",
+              "line": 14,
+              "column": 7
+            },
+            {
+              "title": "returns a not-found error for updating a non-existing post",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 637,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [
+                        {
+                          "text": "Request failed with status 500 and body: null\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:28.137Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "614e66ec737b37252fa2-c19009fd252e742f04f4",
+              "file": "api/update-posts.spec.ts",
+              "line": 26,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "posts.spec.ts",
+      "file": "posts.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "JSONPlaceholder Posts API",
+          "file": "posts.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "creates a post successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 233,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Request succeeded with status 201\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:28.272Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b37e12cd73bb054e2a6c-aeaf29a85d9fdcb8d69d",
+              "file": "posts.spec.ts",
+              "line": 23,
+              "column": 7
+            },
+            {
+              "title": "gets a post successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 23,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Request succeeded with status 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:28.293Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b37e12cd73bb054e2a6c-69b1a9a208b6116e4076",
+              "file": "posts.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "updates a post successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 226,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Request succeeded with status 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:28.308Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b37e12cd73bb054e2a6c-21aade7a70f14e826947",
+              "file": "posts.spec.ts",
+              "line": 42,
+              "column": 7
+            },
+            {
+              "title": "deletes a post successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 224,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Request succeeded with status 200\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T14:39:28.312Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b37e12cd73bb054e2a6c-2215dd9748b7669068bc",
+              "file": "posts.spec.ts",
+              "line": 54,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-07-18T14:39:27.149Z",
+    "duration": 1661.063,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
