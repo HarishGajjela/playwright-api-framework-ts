@@ -1,0 +1,462 @@
+PROMPT 1
+
+Act as a Senior SDET and Playwright Automation Engineer.
+
+Create a lightweight Playwright API Automation Framework using TypeScript and JSONPlaceholder APIs.
+
+Tech Stack:
+- Playwright Test
+- TypeScript
+- Node.js
+
+API Base URL:
+https://jsonplaceholder.typicode.com
+
+Goal:
+Build a simple but professional API automation framework that demonstrates reusable design, CRUD testing, reporting, and CI/CD readiness.
+
+Requirements:
+
+Folder Structure:
+
+src/
+ ├── api/
+ │    ├── ApiClient.ts
+ │    └── PostService.ts
+ └── data/
+      └── testData.ts
+
+tests/
+ └── posts.spec.ts
+
+.github/workflows/
+ └── playwright-api.yml
+
+Root Files:
+- playwright.config.ts
+- README.md
+
+Framework Features:
+
+1. Reusable ApiClient
+   - GET
+   - POST
+   - PUT
+   - DELETE
+   - Common headers
+   - Error handling
+   - TypeScript typing
+
+2. Service Layer
+   - PostService
+   - createPost()
+   - getPost()
+   - updatePost()
+   - deletePost()
+
+3. CRUD API Tests
+   - Create Post
+   - Get Post
+   - Update Post
+   - Delete Post
+
+4. Assertions
+   - Status code validation
+   - Response body validation
+   - Field validation
+
+5. Reporting
+   - HTML Report
+   - JSON Report
+
+6. CI/CD
+   - GitHub Actions workflow
+   - Run tests on push and pull request
+   - Upload reports as artifacts
+
+7. Documentation
+   - Professional README
+   - Setup steps
+   - Installation
+   - Run tests
+   - View reports
+   - Framework overview
+
+Important Instructions:
+
+- Use TypeScript best practices.
+- Keep the framework simple and easy to understand.
+- Do not overengineer.
+- Follow Playwright standards.
+- Add comments only where necessary.
+- Generate ONE FILE AT A TIME.
+- Wait for my approval before generating the next file.
+- Start by showing the folder structure and implementation plan only.
+
+---------------------------------------------------------------------------
+Prompt 2
+Act as a Senior SDET Lead preparing a technical learning demo for engineering management.
+
+The Playwright TypeScript API Automation Framework is already implemented.
+
+Framework includes:
+- Playwright API Testing
+- TypeScript
+- JSONPlaceholder API automation
+- CRUD operations
+- Reusable API Client
+- Service Layer
+- Environment configuration
+- Reporting
+- GitHub Actions CI/CD
+
+Important:
+DO NOT modify any existing source code.
+DO NOT redesign the framework.
+Only create documentation and presentation assets.
+
+Create the following files:
+
+================================================
+
+1. EXECUTIVE_SUMMARY.md
+
+Purpose:
+Provide a management-level overview.
+
+Include:
+
+- Project Title
+- Objective
+- Problem Statement
+- Solution Overview
+- Technology Stack
+- Framework Capabilities
+- Key Achievements
+- Business Value
+- Learning Outcomes from GitHub Copilot
+
+Keep it concise and professional.
+
+================================================
+
+2. ARCHITECTURE.md
+
+Purpose:
+Explain framework design.
+
+Include:
+
+- Framework architecture overview
+- Folder structure explanation
+- Component responsibilities
+
+Explain:
+
+Test Layer
+    |
+Service Layer
+    |
+API Client Layer
+    |
+External API
+
+
+Explain design decisions:
+
+- Why Playwright API testing
+- Why TypeScript
+- Why service layer design
+- Why environment-based configuration
+- Why reusable API client approach
+
+Add Mermaid architecture diagram.
+
+================================================
+
+3. PRODUCTION_READINESS.md
+
+Purpose:
+Show framework maturity assessment.
+
+Include:
+
+Current Implemented Features:
+
+- CRUD API automation
+- Reusable API client
+- Environment management
+- Error handling
+- Logging
+- Reporting
+- CI/CD integration
+
+
+Assessment:
+
+- Maintainability
+- Scalability
+- Reliability
+- Security considerations
+
+
+Future Enhancements:
+
+- Authentication management
+- API schema validation
+- Advanced test data management
+- Secrets management
+- Performance testing
+- Enterprise integrations
+
+
+Add priority:
+
+High
+Medium
+Low
+
+================================================
+
+4. COPILOT_PROMPT_JOURNEY.md
+
+Purpose:
+Document how GitHub Copilot was used.
+
+Include:
+
+Project background:
+
+- Why this framework was created
+- Learning objective
+- Expected outcome
+
+
+Development phases:
+
+Phase 1:
+Framework Foundation
+
+Explain prompt intent:
+- Create Playwright TypeScript API framework
+- Create folder structure
+- Create reusable API client
+
+
+Phase 2:
+CRUD Automation
+
+Explain prompt intent:
+- Create service layer
+- Create CRUD tests
+- Add validations
+
+
+Phase 3:
+Reporting and CI/CD
+
+Explain prompt intent:
+- Add reports
+- Add GitHub Actions
+
+
+Phase 4:
+Production Readiness
+
+Explain prompt intent:
+- Environment management
+- Error handling
+- Logging
+- Test improvements
+
+
+Phase 5:
+Documentation and Demo
+
+Explain prompt intent:
+- Generate README
+- Generate architecture documents
+- Generate presentation material
+
+
+Create a table:
+
+| Prompt Purpose | Reason | Output Generated | Value Added |
+
+
+Also explain:
+
+- Why prompts were divided into smaller tasks
+- Why file-by-file generation was used
+- Human decisions vs Copilot assistance
+- Key lessons learned
+
+================================================
+
+5. MANAGER_DEMO_SCRIPT.md
+
+Create a 10-minute demo script.
+
+Structure:
+
+Opening:
+- Introduction
+- Objective
+- Why GitHub Copilot was used
+
+
+Demo Flow:
+
+1. Project overview
+2. Folder structure
+3. Framework architecture
+4. API Client explanation
+5. Service layer explanation
+6. CRUD test execution
+7. Test reports
+8. CI/CD workflow
+9. Copilot prompt journey
+
+
+Closing:
+
+- Key achievements
+- Learning outcomes
+- Future improvements
+
+
+================================================
+
+6. MANAGER_DEMO_PRESENTATION.md
+
+Create PowerPoint slide content.
+
+Create 10 slides:
+
+Slide 1:
+Title
+Playwright API Automation Framework using TypeScript and GitHub Copilot
+
+
+Slide 2:
+Project Objective
+
+Include:
+- Learning goal
+- Automation goal
+- Expected outcome
+
+
+Slide 3:
+Technology Stack
+
+Include:
+- Playwright
+- TypeScript
+- Node.js
+- GitHub Actions
+- JSONPlaceholder API
+
+
+Slide 4:
+Framework Architecture
+
+Include architecture diagram explanation.
+
+
+Slide 5:
+Framework Implementation
+
+Show:
+
+- ApiClient
+- Service Layer
+- Test Layer
+- Configuration
+
+
+Slide 6:
+CRUD Automation
+
+Explain:
+
+- Create
+- Read
+- Update
+- Delete
+
+Include validation approach.
+
+
+Slide 7:
+Reporting and CI/CD
+
+Explain:
+
+- HTML report
+- JSON report
+- JUnit report
+- GitHub Actions
+
+
+Slide 8:
+Production Readiness Improvements
+
+Show:
+
+Before:
+Starter framework
+
+After:
+Environment management
+Error handling
+Logging
+CI improvements
+
+
+Slide 9:
+GitHub Copilot Experience
+
+Explain:
+
+- Prompt-driven development
+- Faster implementation
+- Documentation generation
+- Refactoring assistance
+
+
+Slide 10:
+Future Roadmap and Q&A
+
+
+================================================
+
+7. README_REVIEW.md
+
+Review the current README.
+
+Suggest improvements for:
+
+- Better onboarding
+- Better execution instructions
+- Better screenshots
+- Better architecture explanation
+- Better usage examples
+
+
+================================================
+
+Final Instructions:
+
+- Write professionally for engineering management.
+- Focus on engineering decisions and business value.
+- Keep explanations simple.
+- Avoid unnecessary technical complexity.
+- Do not claim AI replaced engineering decisions.
+- Highlight collaboration between engineer and GitHub Copilot.
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
