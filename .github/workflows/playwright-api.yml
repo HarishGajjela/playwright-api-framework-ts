@@ -17,7 +17,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: npm
 
       - name: Install dependencies
@@ -49,3 +49,11 @@ jobs:
         with:
           name: playwright-junit-results
           path: test-results/junit.xml
+
+      - name: Publish Test Summary
+        if: always()
+        run: |
+          echo "## Playwright API Test Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Framework: Playwright TypeScript API Automation" >> $GITHUB_STEP_SUMMARY
+          echo "API: JSONPlaceholder" >> $GITHUB_STEP_SUMMARY    
