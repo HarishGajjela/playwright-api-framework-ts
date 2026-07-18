@@ -50,10 +50,39 @@ jobs:
           name: playwright-junit-results
           path: test-results/junit.xml
 
-      - name: Publish Test Summary
+      - name: Generate Test Execution Summary
         if: always()
         run: |
-          echo "## Playwright API Test Results" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Framework: Playwright TypeScript API Automation" >> $GITHUB_STEP_SUMMARY
-          echo "API: JSONPlaceholder" >> $GITHUB_STEP_SUMMARY    
+          node -e "
+          const fs=require('fs');
+          const r=require('./test-results/results.json');
+
+          let total=0;
+          let passed=0;
+          let failed=0;
+
+          function scan(s){
+            if(s.specs){
+              s.specs.forEach(x=>{
+                total++;
+                if(x.ok) passed++;
+                else failed++;
+              });
+            }
+            if(s.suites){
+              s.suites.forEach(scan);
+            }
+          }
+
+          scan(r);
+
+          let summary=
+          '## 🚀 Playwright API Test Summary\n\n' +
+          '| Metric | Count |\n' +
+          '|---|---|\n' +
+          '| Total Tests | '+total+' |\n' +
+          '| Passed | '+passed+' |\n' +
+          '| Failed | '+failed+' |\n';
+
+          fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary);
+          "  
